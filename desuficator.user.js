@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Desuficator for ORMT
 // @namespace    udp://desushelter/*
-// @version      0.0.2
+// @version      0.0.3
 // @description  Desu-desu!
 // @include      http://dobrochan.com/b/res/*
 // @include      http://dobrochan.ru/b/res/*
@@ -152,7 +152,12 @@ var getSelector = function(n){
 }
 
 
-if(document.title.match(/Official.\sRozen\sMaiden\sThread/)){
+if(
+  document.title.match(/Official.\sRozen\sMaiden\sThread/i) ||
+  document.title.match(/Уютный\sтред/i) ||
+  document.title.match(/Понитред/i) ||
+  document.title.match(/Бес+он+ица/i)
+  ){
   // img[src*="4s.jp"].thumb:not(:hover), img[src*="4s.png"].thumb:not(:hover), img[src*="4s.gif"].thumb:not(:hover) {content: url("data:image/jpeg;base64,");}
   var css = '';
 
