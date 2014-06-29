@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Desuficator for ORMT
 // @namespace    udp://desushelter/*
-// @version      0.0.2
+// @version      0.0.3
 // @description  Desu-desu!
 // @include      http://dobrochan.com/b/res/*
 // @include      http://dobrochan.ru/b/res/*
