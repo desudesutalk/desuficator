@@ -152,18 +152,10 @@ var getSelector = function(n){
 }
 
 
-if(
-  document.title.match(/Official.\sRozen\sMaiden\sThread/i) ||
-  document.title.match(/Уютный\sтред/i) ||
-  document.title.match(/Понитред/i) ||
-  document.title.match(/Бес+он+ица/i)
-  ){
-  // img[src*="4s.jp"].thumb:not(:hover), img[src*="4s.png"].thumb:not(:hover), img[src*="4s.gif"].thumb:not(:hover) {content: url("data:image/jpeg;base64,");}
-  var css = '';
+var css = '';
 
-  for(var i = 0; i < 20; i++){
-        css += getSelector(i) + '{-moz-box-sizing: border-box; box-sizing: border-box;  padding-left: '+thumbs[i].width+'px; background: url("data:image/jpeg;base64,'+thumbs[i].data+'"); width: '+thumbs[i].width+'px; height: '+thumbs[i].height+'px;}\n';
-  }
+for(var i = 0; i < 20; i++){
+    css += getSelector(i) + '{-moz-box-sizing: border-box; box-sizing: border-box;  padding-left: '+thumbs[i].width+'px; background: url("data:image/jpeg;base64,'+thumbs[i].data+'"); width: '+thumbs[i].width+'px; height: '+thumbs[i].height+'px;}\n';
 }
 
 var head = document.head || document.getElementsByTagName('head')[0],
