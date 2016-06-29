@@ -12,3 +12,5 @@ desuficator
 
 [Установить](https://github.com/desudesutalk/desuficator/raw/master/desuficator.user.js)
 
+[Деса для куклоскрипта](https://github.com/desudesutalk/desuficator/raw/master/suiseiseki.user.js)
+
